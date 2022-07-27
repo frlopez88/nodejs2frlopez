@@ -1,15 +1,17 @@
 var http = require('http');
+var modulo = require('./moduloprueba');
+
 
 http.createServer( function(req, res){
 
 	res.writeHead(200, {'Content-Type': 'text/plain'});
 
-	let num1 = 20; 
-	let num2 = 100;
-	let num3 = num1 + num2;
+	let nombre = modulo.saludo();
+	let edad = modulo.edad();
 
-	console.log(num3);
+	res.write("Este es una escritura por aparte 1");
+	res.write("Este es una escritura por aparte 2");
 
-	res.end("Hola Mundo con NodeJs ");
+	res.end("Hola Mundo con NodeJs " + nombre +" "+ edad);
 
-}).listen(8080);
+}).listen(8081);
