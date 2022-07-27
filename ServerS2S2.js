@@ -1,17 +1,17 @@
 var http = require('http');
-var modulo = require('./moduloprueba');
+//var modulo = require('./moduloprueba');
+var manejoUrl = require('url');
 
 
 http.createServer( function(req, res){
 
 	res.writeHead(200, {'Content-Type': 'text/plain'});
 
-	let nombre = modulo.saludo();
-	let edad = modulo.edad();
+	//let nombre = modulo.saludo();
+	//let edad = modulo.edad();
 
-	res.write("Este es una escritura por aparte 1");
-	res.write("Este es una escritura por aparte 2");
+	var parametros =  manejoUrl.parse(req.url, true).query;
 
-	res.end("Hola Mundo con NodeJs " + nombre +" "+ edad);
+	res.end("Nombre :" + parametros.nombre + " Edad: " + parametros.edad + " Nacionalidad: "+ parametros.nacionalidad );
 
 }).listen(8081);
