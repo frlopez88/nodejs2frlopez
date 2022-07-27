@@ -1,0 +1,19 @@
+{
+  "name": "nodejs2frlopez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ServerS2S2.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frlopez88/nodejs2frlopez.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frlopez88/nodejs2frlopez/issues"
+  },
+  "homepage": "https://github.com/frlopez88/nodejs2frlopez#readme"
+}
