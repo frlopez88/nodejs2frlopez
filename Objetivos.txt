@@ -1,0 +1,18 @@
+Semana 2 Sesión 1
+
+Objetivos
+
+1) Crear Repositorios en Github 
+2) Crear nuestro holamundo en node js 
+3) Levantar un servidor de node js 
+4) Commit y Pull de codigo en Github
+
+Semana 2 Sesión 2 
+
+Objetivos 
+
+1) Manejo de Modulos 
+2) Modulo HTTP 
+3) Manejo de Archivos 
+4) Manejo de Parametros 
+
