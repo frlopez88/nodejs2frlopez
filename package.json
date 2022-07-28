@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/frlopez88/nodejs2frlopez#readme",
   "dependencies": {
+    "mysql": "^2.18.1",
     "upper-case": "^2.0.2"
   }
 }
