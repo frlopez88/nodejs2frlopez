@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/frlopez88/nodejs2frlopez/issues"
   },
-  "homepage": "https://github.com/frlopez88/nodejs2frlopez#readme"
+  "homepage": "https://github.com/frlopez88/nodejs2frlopez#readme",
+  "dependencies": {
+    "upper-case": "^2.0.2"
+  }
 }
