@@ -16,3 +16,10 @@ Objetivos
 3) Manejo de Archivos 
 4) Manejo de Parametros 
 
+
+Semana 2 Sesión 3 
+
+1) NPM (Node Package Manager)
+2) Node & MySQL 
+3) Inserciones
+4) Selecciones 

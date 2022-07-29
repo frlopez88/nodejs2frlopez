@@ -4,9 +4,10 @@ var mysql = require('mysql');
 console.log("Realice Importacion");
 
 var con = mysql.createConnection({
-  host: "localhost",
+  host: "127.0.0.1",
   user: "root",
-  password: "a123456b"
+  password: "password", 
+  database : "des_web_1"
 });
 
 
