@@ -7,7 +7,7 @@ var con = mysql.createConnection({
   host: "127.0.0.1",
   user: "root",
   password: "password", 
-  database : "des_web_1"
+  database : "bd_des_web"
 });
 
 
