@@ -4,7 +4,15 @@ var mysql = require('mysql');
 
 
 http.createServer(function (req, res) {
-  //res.writeHead(200, {'Content-Type': 'text/json'});
+  
+  if (req.url === '/favicon.ico') {
+    res.writeHead(200, {'Content-Type': 'image/x-icon'} );
+    res.end();
+    console.log('favicon requested');
+    return;
+  }
+
+
   res.setHeader('Content-Type', 'application/json');
 
   var con = mysql.createConnection({
@@ -33,4 +41,4 @@ http.createServer(function (req, res) {
 
   
 
-}).listen(8081);
+}).listen(8080);
