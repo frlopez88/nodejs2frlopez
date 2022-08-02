@@ -23,13 +23,13 @@ http.createServer(function (req, res) {
 
   	var parametros =  manejoUrl.parse(req.url, true).query;
 
-  	var sql = "";
+  	var sql = "select * from tbl_alumno";
 
   	con.connect(function(err) {
 	  if (err) throw err;
 	  con.query( sql , function (err, result, fields) {
 	    if (err) throw err;
-	    console.log(result);
+	    res.end(JSON.stringify(result));
 	  });
 	});
 
