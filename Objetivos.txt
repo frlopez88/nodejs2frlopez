@@ -23,3 +23,15 @@ Semana 2 Sesión 3
 2) Node & MySQL 
 3) Inserciones
 4) Selecciones 
+
+
+Semana 3 Sesion 1 
+
+1) Web Services de Seleccion 
+
+	a) joins: Inner Join, Left Join, Right Join. 
+
+
+	Web Service de Seleccion: 
+	1) Get all 
+	2) Get Id 
