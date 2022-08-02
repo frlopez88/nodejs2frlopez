@@ -59,3 +59,9 @@ create table tbl_prestamo
 );
 
 
+insert into tbl_alumno
+(numero_de_cuenta, nombre, correo_electronico)
+values
+    ('T1123', 'Fernando Lopez', 'frlopez@unitec.edu'),
+    ('T28983', 'Leonel Messi' , 'lmessi@unitec.edu'),
+    ('T89823', 'Tony Stark', 'tstark@unitec.edu');
