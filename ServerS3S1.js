@@ -23,7 +23,17 @@ http.createServer(function (req, res) {
 
   	var parametros =  manejoUrl.parse(req.url, true).query;
 
-  	var sql = "select * from tbl_alumno";
+	var sql = "select * from tbl_alumno";
+
+	if (parametros.numero_de_cuenta != undefined ){
+
+		sql =  sql + " where numero_de_cuenta = '"+parametros.numero_de_cuenta+ "'";
+
+	}
+
+ 
+ 	console.log(sql);
+
 
   	con.connect(function(err) {
 	  if (err) throw err;
