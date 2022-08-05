@@ -59,9 +59,43 @@ http.createServer(function (req, res) {
   							break;
 
   						case "select":
+
+  							var sql = "select * from tbl_alumno";
+
+							if (parametros.numero_de_cuenta != undefined ){
+
+								sql =  sql + " where numero_de_cuenta = '"+parametros.numero_de_cuenta+ "'";
+
+							}
+
+							con.connect(function(err) {
+							  if (err) throw err;
+							  con.query( sql , function (err, result, fields) {
+							    if (err) throw err;
+							    res.end(JSON.stringify(result));
+							  });
+							});
+
   							break;
 
   						case "delete":
+
+
+  							con.connect(function(err) {
+								  if (err) throw err;
+								    
+								    var sql = "delete from tbl_alumno  where numero_de_cuenta = '" 
+								    		+ parametros.numero_de_cuenta + "'";
+								    
+								    con.query(sql, function (err, result) {
+								      if (err) throw err;
+								      res.end(JSON.stringify(result));
+								    });
+								  
+								  });
+
+
+
   							break;
   						default:
   							break;
