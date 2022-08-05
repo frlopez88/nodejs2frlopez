@@ -47,7 +47,9 @@ http.createServer(function (req, res) {
 								    var sql = "insert into tbl_alumno " +
 								               " (numero_de_cuenta, nombre, correo_electronico) "+
 								               " values "+
-								               " ('"+parametros.numero_de_cuenta+"', '"+parametros.nombre+"', '"+parametros.correo_electronico+"')";
+								               " ('"+parametros.numero_de_cuenta
+								               +"', '"+parametros.nombre+
+								               "', '"+parametros.correo_electronico+"')";
 								    
 								    con.query(sql, function (err, result) {
 								      if (err) throw err;
@@ -98,6 +100,11 @@ http.createServer(function (req, res) {
 
   							break;
   						default:
+
+  							const mensaje = {
+  								data : `Operacion ${parametros.accion} en  ${parametros.tabla} no existente!`
+  							}
+  							res.end(JSON.stringify(mensaje));
   							break;
   					}
 
