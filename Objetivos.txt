@@ -35,3 +35,30 @@ Semana 3 Sesion 1
 	Web Service de Seleccion: 
 	1) Get all 
 	2) Get Id 
+
+
+Semana 3 Sesion 2
+
+1) Web services de seleccion 
+	inner join 
+	left join 
+
+
+Semana 3 Sesion 3
+
+1) Delete
+2) Un api completa 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
